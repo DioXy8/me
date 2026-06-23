@@ -4,88 +4,125 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>DioXy - Gaming Profile</title>
+<title>DioXy</title>
 
 <style>
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-    body {
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-        background: #fafafa;
-        color: #111;
-        line-height: 1.6;
-    }
+body {
+    font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    background: #f4f4f5;
+    color: #18181b;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    background: white;
+    border-radius: 24px;
+    padding: 48px;
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, .06),
+        0 1px 3px rgba(0, 0, 0, .04);
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: -2px;
+}
+
+.subtitle {
+    color: #71717a;
+    margin-top: 6px;
+    margin-bottom: 48px;
+}
+
+.section {
+    margin-top: 40px;
+}
+
+h2 {
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #71717a;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+tr {
+    transition: .15s ease;
+}
+
+tr:hover {
+    background: #fafafa;
+}
+
+td {
+    padding: 16px;
+    border-bottom: 1px solid #ececec;
+}
+
+td:first-child {
+    font-weight: 500;
+}
+
+td:last-child {
+    text-align: right;
+    font-weight: 600;
+}
+
+.links p {
+    padding: 12px 0;
+    border-bottom: 1px solid #ececec;
+}
+
+.label {
+    font-weight: 600;
+    margin-right: 8px;
+}
+
+footer {
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: 1px solid #ececec;
+    color: #a1a1aa;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 700px) {
 
     .container {
-        max-width: 700px;
-        margin: 80px auto;
-        padding: 0 24px;
+        padding: 28px;
+        border-radius: 18px;
     }
 
     h1 {
-        font-size: 2.5rem;
-        font-weight: 700;
-        margin-bottom: 8px;
-    }
-
-    .subtitle {
-        color: #666;
-        margin-bottom: 48px;
-    }
-
-    .section {
-        margin-bottom: 48px;
-    }
-
-    h2 {
-        font-size: 1.1rem;
-        margin-bottom: 16px;
-        font-weight: 600;
-    }
-
-    table {
-        width: 100%;
-        border-collapse: collapse;
+        font-size: 2.2rem;
     }
 
     td {
-        padding: 14px 0;
-        border-bottom: 1px solid #e5e5e5;
+        padding: 12px 8px;
+        font-size: 0.95rem;
     }
-
-    td:last-child {
-        text-align: right;
-        font-weight: 600;
-    }
-
-    .links p {
-        margin-bottom: 10px;
-    }
-
-    .label {
-        color: #666;
-    }
-
-    footer {
-        margin-top: 64px;
-        color: #999;
-        font-size: 0.9rem;
-    }
-
-    @media (max-width: 600px) {
-        h1 {
-            font-size: 2rem;
-        }
-
-        td {
-            font-size: 0.95rem;
-        }
-    }
+}
 </style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -93,7 +130,9 @@
 <div class="container">
 
     <h1>DioXy</h1>
-    <p class="subtitle">Competitive Gaming Profile</p>
+    <p class="subtitle">
+        Peak ranks across competitive games.
+    </p>
 
     <div class="section">
         <h2>Peak Ranks</h2>
@@ -134,17 +173,17 @@
         <h2>Accounts</h2>
 
         <p>
-            <span class="label">Riot ID :</span>
+            <span class="label">Riot ID:</span>
             DioXy#8888
         </p>
 
         <p>
-            <span class="label">Epic Games :</span>
+            <span class="label">Epic Games:</span>
             KC DioXy
         </p>
 
         <p>
-            <span class="label">Nintendo Switch :</span>
+            <span class="label">Nintendo Switch:</span>
             SW-XXXXXXXXXXXX
         </p>
     </div>
