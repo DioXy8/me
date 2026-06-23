@@ -1,199 +1,230 @@
-```html
 <!DOCTYPE html>
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>DioXy</title>
+<title>DioXy - Peak Ranks</title>
+<meta name="description" content="Competitive gaming profile.">
 
-<style>
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-    background: #f4f4f5;
-    color: #18181b;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    padding: 40px 20px;
-}
-
-.container {
-    width: 100%;
-    max-width: 800px;
-    background: white;
-    border-radius: 24px;
-    padding: 48px;
-    box-shadow:
-        0 10px 30px rgba(0, 0, 0, .06),
-        0 1px 3px rgba(0, 0, 0, .04);
-}
-
-h1 {
-    font-size: 3rem;
-    font-weight: 700;
-    letter-spacing: -2px;
-}
-
-.subtitle {
-    color: #71717a;
-    margin-top: 6px;
-    margin-bottom: 48px;
-}
-
-.section {
-    margin-top: 40px;
-}
-
-h2 {
-    font-size: 0.95rem;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    color: #71717a;
-    margin-bottom: 20px;
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-}
-
-tr {
-    transition: .15s ease;
-}
-
-tr:hover {
-    background: #fafafa;
-}
-
-td {
-    padding: 16px;
-    border-bottom: 1px solid #ececec;
-}
-
-td:first-child {
-    font-weight: 500;
-}
-
-td:last-child {
-    text-align: right;
-    font-weight: 600;
-}
-
-.links p {
-    padding: 12px 0;
-    border-bottom: 1px solid #ececec;
-}
-
-.label {
-    font-weight: 600;
-    margin-right: 8px;
-}
-
-footer {
-    margin-top: 50px;
-    padding-top: 20px;
-    border-top: 1px solid #ececec;
-    color: #a1a1aa;
-    font-size: 0.9rem;
-}
-
-@media (max-width: 700px) {
-
-    .container {
-        padding: 28px;
-        border-radius: 18px;
-    }
-
-    h1 {
-        font-size: 2.2rem;
-    }
-
-    td {
-        padding: 12px 8px;
-        font-size: 0.95rem;
-    }
-}
-</style>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Inter,sans-serif;
+    background:linear-gradient(135deg,#0f172a,#1e293b);
+    color:#e2e8f0;
+    min-height:100vh;
+    padding:40px 20px;
+}
+
+.container{
+    max-width:900px;
+    margin:auto;
+}
+
+.header{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.header h1{
+    font-size:4rem;
+    font-weight:800;
+    color:white;
+    letter-spacing:-2px;
+}
+
+.subtitle{
+    color:#94a3b8;
+    margin-top:10px;
+}
+
+.section{
+    background:rgba(30,41,59,.9);
+    backdrop-filter:blur(10px);
+    border:1px solid #334155;
+    border-radius:22px;
+    padding:28px;
+    margin-bottom:24px;
+    box-shadow:0 10px 30px rgba(0,0,0,.25);
+}
+
+h2{
+    color:white;
+    margin-bottom:20px;
+    font-size:1rem;
+    text-transform:uppercase;
+    letter-spacing:1px;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+tr{
+    transition:.2s;
+}
+
+tr:hover{
+    background:#273449;
+}
+
+td{
+    padding:18px 12px;
+    border-bottom:1px solid #334155;
+}
+
+td:first-child{
+    color:#cbd5e1;
+    font-weight:500;
+}
+
+td:last-child{
+    text-align:right;
+    font-weight:700;
+}
+
+.lol{color:#60a5fa;}
+.tft{color:#c084fc;}
+.valorant{color:#22c55e;}
+.pokemon{color:#facc15;}
+.splatoon{color:#38bdf8;}
+.cr{color:#fb923c;}
+.fn{color:#ef4444;}
+
+.links p{
+    padding:14px 0;
+    border-bottom:1px solid #334155;
+}
+
+.label{
+    color:#94a3b8;
+    font-weight:600;
+    display:inline-block;
+    width:140px;
+}
+
+footer{
+    text-align:center;
+    margin-top:30px;
+    color:#64748b;
+}
+
+@media(max-width:700px){
+
+    .header h1{
+        font-size:2.7rem;
+    }
+
+    td{
+        padding:14px 6px;
+        font-size:.95rem;
+    }
+
+    .label{
+        width:110px;
+    }
+}
+
+</style>
 </head>
 
 <body>
 
 <div class="container">
 
-    <h1>DioXy</h1>
-    <p class="subtitle">
-        Peak ranks across competitive games.
-    </p>
+    <div class="header">
+        <h1>DioXy</h1>
+        <p class="subtitle">
+            Competitive gaming achievements
+        </p>
+    </div>
 
     <div class="section">
+
         <h2>Peak Ranks</h2>
 
         <table>
+
             <tr>
-                <td>League of Legends</td>
-                <td>Diamond II</td>
+                <td>🎮 League of Legends</td>
+                <td class="lol">Diamond II</td>
             </tr>
+
             <tr>
-                <td>Teamfight Tactics</td>
-                <td>Master 93 LP</td>
+                <td>🧩 Teamfight Tactics</td>
+                <td class="tft">Master 93 LP</td>
             </tr>
+
             <tr>
-                <td>Valorant</td>
-                <td>Ascendant I</td>
+                <td>🔺 Valorant</td>
+                <td class="valorant">Ascendant I</td>
             </tr>
+
             <tr>
-                <td>Pokémon Champions</td>
-                <td>Master Ball · 1800 Elo</td>
+                <td>⚡ Pokémon Champions</td>
+                <td class="pokemon">Master Ball · 1800 Elo</td>
             </tr>
+
             <tr>
-                <td>Splatoon</td>
-                <td>S+ in all modes</td>
+                <td>🦑 Splatoon</td>
+                <td class="splatoon">S+ in all modes</td>
             </tr>
+
             <tr>
-                <td>Clash Royale</td>
-                <td>Champion Suprême · 1628 Elo</td>
+                <td>🏰 Clash Royale</td>
+                <td class="cr">Champion Suprême · 1628 Elo</td>
             </tr>
+
             <tr>
-                <td>Fortnite</td>
-                <td>Unreal</td>
+                <td>🔥 Fortnite</td>
+                <td class="fn">Unreal</td>
             </tr>
+
         </table>
+
     </div>
 
-    <div class="section links">
+    <div class="section">
+
         <h2>Accounts</h2>
 
-        <p>
-            <span class="label">Riot ID:</span>
-            DioXy#8888
-        </p>
+        <div class="links">
 
-        <p>
-            <span class="label">Epic Games:</span>
-            KC DioXy
-        </p>
+            <p>
+                <span class="label">🎯 Riot ID</span>
+                DioXy#8888
+            </p>
 
-        <p>
-            <span class="label">Nintendo Switch:</span>
-            SW-XXXXXXXXXXXX
-        </p>
+            <p>
+                <span class="label">🎮 Epic Games</span>
+                KC DioXy
+            </p>
+
+            <p>
+                <span class="label">🕹️ Nintendo</span>
+                SW-XXXXXXXXXXXX
+            </p>
+
+        </div>
+
     </div>
 
     <footer>
-        Last updated manually.
+        Updated June 2026
     </footer>
 
 </div>
 
 </body>
 </html>
-```
