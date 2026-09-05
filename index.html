@@ -3,61 +3,55 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>DioXy</title>
-
 <link rel="stylesheet" href="styles.css">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
-
 <body>
-
 <div class="container">
-
     <!-- HEADER -->
     <div class="header">
-
         <img src="jungko.jpg" class="avatar">
-
         <h1>DioXy</h1>
-
+        <p class="bio">
+            Mon pseudo est DioXy, j'ai 20 ans et j'habite en Normandie, je suis étudiant en informatique.
+            Je touche à beaucoup de jeux vidéos différents, je fais du foot depuis mes 3 ans et je supporte
+            la grande Karmine Corp. Je suis aussi Vice-Président et secrétaire d'Oniry, une association dans
+            l'événementiel e-sport basée en Normandie, depuis Mars 2026. Vous pouvez retrouver le site depuis
+            le logo en bas de l'écran.
+        </p>
     </div>
-
     <!-- GRID LINKS -->
     <div class="grid">
-
         <a class="card youtube" href="https://www.youtube.com/@DioXy_8" target="_blank">
             YouTube
         </a>
-
         <a class="card twitch" href="https://twitch.tv/dioxy8" target="_blank">
             Twitch
         </a>
-
         <a class="card twitter" href="https://x.com/DioXy_8" target="_blank">
             Twitter / X
         </a>
-
         <a class="card ranks" href="index_rank.html">
             My Ranks
         </a>
-
     </div>
 
+    <!-- FOOTER LOGO -->
+    <a href="https://oniry.fr" target="_blank" class="oniry-logo-link">
+        <img src="oniry_logo.png" alt="Oniry" class="oniry-logo">
+    </a>
 </div>
     <script>
 document.addEventListener("mousemove", (e) => {
     document.querySelectorAll(".card").forEach(card => {
         const rect = card.getBoundingClientRect();
-
         const x = e.clientX - rect.left;
         const y = e.clientY - rect.top;
-
         card.style.setProperty("--x", x + "px");
         card.style.setProperty("--y", y + "px");
     });
 });
 </script>
-
 </body>
 </html>
