@@ -7,7 +7,7 @@ body{
     font-family:Inter, sans-serif;
     color:white;
     min-height:100vh;
-    padding:40px 20px;
+    padding:24px 20px;
     background:
         radial-gradient(circle at 20% 0%, #1f2937 0%, transparent 45%),
         radial-gradient(circle at 80% 0%, #111827 0%, transparent 50%),
@@ -33,12 +33,12 @@ body::before{
 /* HEADER */
 .header{
     text-align:center;
-    margin-bottom:60px;
+    margin-bottom:32px;
 }
 /* AVATAR */
 .avatar{
-    width:92px;
-    height:92px;
+    width:72px;
+    height:72px;
     border-radius:50%;
     object-fit:cover;
     display:block;
@@ -54,7 +54,7 @@ body::before{
 /* TITLE */
 h1{
     text-align:center;
-    font-size:4rem;
+    font-size:3rem;
     font-weight:800;
     letter-spacing:-2px;
     background:linear-gradient(90deg,#fff,#a1a1aa);
@@ -70,16 +70,16 @@ h1{
 .bio{
     text-align:center;
     color:#9ca3af;
-    font-size:0.98rem;
-    line-height:1.7;
-    max-width:640px;
-    margin:18px auto 0 auto;
+    font-size:0.85rem;
+    line-height:1.5;
+    max-width:600px;
+    margin:12px auto 0 auto;
 }
 /* GRID */
 .grid{
     display:grid;
     grid-template-columns:repeat(2,1fr);
-    gap:22px;
+    gap:16px;
 }
 /* CARD */
 .card{
@@ -87,14 +87,14 @@ h1{
     overflow:hidden;
     text-decoration:none;
     color:white;
-    height:180px;
-    border-radius:26px;
+    height:120px;
+    border-radius:22px;
     display:flex;
     align-items:center;
     justify-content:center;
     flex-direction:column;
     font-weight:700;
-    font-size:1.6rem;
+    font-size:1.3rem;
     background:rgba(255,255,255,0.04);
     border:1px solid rgba(255,255,255,0.08);
     backdrop-filter: blur(14px);
@@ -138,11 +138,11 @@ h1{
 .oniry-logo-link{
     display:flex;
     justify-content:center;
-    margin-top:50px;
+    margin-top:28px;
 }
 .oniry-logo{
-    width:46px;
-    height:46px;
+    width:36px;
+    height:36px;
     border-radius:50%;
     object-fit:cover;
     border:2px solid rgba(255,255,255,0.12);
